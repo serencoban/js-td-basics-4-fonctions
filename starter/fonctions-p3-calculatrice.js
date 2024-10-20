@@ -13,7 +13,25 @@ Aide : votre fonction s'exécute avec le pattern suivant : calculer(nb1, "+", nb
 */
 
 // Déclaration de la fonction calculer
-
-
 // Utilisation de la fonction calculer
 
+function calculer( nb1, operateur, nb2){
+    switch (operateur){
+        case '+':
+            return nb1 + nb2;
+        case '-':
+            return nb1 - nb2;
+        case '*':
+            return nb1 * nb2;
+        case '/':
+            return nb1 / nb2;
+        default :
+            return 'opérateur non valide'
+        }
+
+}
+
+console.log(calculer(4, '+', 6));
+console.log(calculer(4, '-', 6));
+console.log(calculer(2, '*', 0));
+console.log(calculer(12, '/', 0));

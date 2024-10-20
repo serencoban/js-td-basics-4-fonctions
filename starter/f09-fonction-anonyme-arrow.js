@@ -22,8 +22,10 @@
 
 // Utilisation de la fonction pour saluer Thomas dans la console
 
-
-
+const bonjour = (prenom) => {
+    return `Bonjour ${prenom} !`
+}
+console.log(bonjour('Thomas'));
 /*
 N.B. Dans certains cas particuliers, on peut simplifier la syntaxe des fonctions fléchées :
 - Quand le corps de la fonction se limite à une seule ligne,
@@ -38,7 +40,8 @@ N.B. Dans certains cas particuliers, on peut simplifier la syntaxe des fonctions
 */
 
 // Fonction anonyme avec la syntaxe simplifiée
-
+const bonjourSimple = prenom => `Bonjour ${prenom} !`;
+console.log(bonjourSimple('Thomas'))
 
 // Utilisation de la fonction pour saluer Thomas dans la console
 

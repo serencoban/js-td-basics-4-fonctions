@@ -9,14 +9,25 @@ FONCTIONS - PRÉPA 4 : Date valide - version 2
   avant d'afficher votre message dans la console
 */
 
-// Fonction pour vérifier si une année est bissextile
 
+/****** J'ai pas compris cet exercice
+    *
+// Fonction pour vérifier si une année est bissextile
+function isBissextile(year){
+    if (year %4 === 0 && year %100!===0) || (year %400===0){
+        return true;
+    }
+    return false
+}
 
 // Fonction pour vérifier si une date est valide
+function isValide (jour, mois, annee){
 
+}
 
 // Demander à l'utilisateur de saisir une date
 
 
 // Utilisation de la fonction isValid pour vérifier la date
 
+*/

@@ -24,14 +24,112 @@ N.B. La déclaration, à elle toute seule, ne produit aucun résultat visible
 */
 
 // 1°) a) Déclarer la fonction
+// À vous de remplir le contenu de cette fonction pour afficher "Bonjour !" dans la console.
 function direBonjour() {
-    // À vous de remplir le contenu de cette fonction pour afficher "Bonjour !" dans la console.
+    console.log("Bonjour !")
 }
 
 // 2°) a) Exécuter la fonction (appelez la fonction direBonjour)
+direBonjour();     // pas return parce que l'objectif: afficher un message dans la console, pas des renvoyer une valeur.
 
-// 3°) a) Stocker le résultat de l'exécution de direBonjour dans une variable resultat
-var resultat = direBonjour();
 
-// 3°) b) Donner l'ordre d'afficher le contenu de la variable resultat dans la console
 
+/*********** MES NOTES DE COURS
+
+ UN FONCTION ELLE A : 0 ou plusieurs parametre  / l'ordre  a de l'importance (identique avec declaration et l'appel/  elle peut retourner une valeur ou undifined
+
+function sayHello(){                //déclarer
+    console.log('Bonjour !')
+}
+sayHello()                                //appeler
+
+
+********
+
+function sayHello(firstName, lastName){             l'ordre est tres important
+    console.log('Bonjour ${firstName} ${lastName}')
+}
+sayHello('Daniel', 'Schreus)
+
+ on ne peut pas faire des console.log car ce sont des variables locales
+
+*********
+ *
+ *
+ function sayHello(firstName, lastName){
+return 'Bonjour ${firstName} ${lastName}';       le return arrete la fonction donc console undifiened
+    console.log("Bonjour")
+ }
+ sayHello('SEREN', 'COBAN)
+
+ ********
+
+
+ function sayHello(firstName, lastName){
+    if( firstName === '' || lastName''){
+    return;
+ }
+    return 'bonjour ${lastName ${firstName}
+ }
+ sayHello ('SEREN', 'COBAN')
+
+    ou
+
+    const toto= function(){
+
+ }
+    ou
+
+    const toto= ()=>{
+
+ }
+    ou
+
+    function toto(){
+
+
+ }
+ *********
+
+ une fonction n'a pas forcement un nom
+    une ARROW FUNCTION
+
+ const toto = () =>{                toto n'est d'ailleurs pas le nom de la fonction mais sa référence
+ }
+ function (){                       ici, on appel la référence et non le nom de la fonction
+
+ }
+
+ toto;                     on appel la reference (souvent dans le chapitre événement
+ toto();                         on appel la fonction qui est
+
+
+ *******
+
+    pour forcer User à interagir
+
+ function forceUser(){
+    const userInput = false;
+
+    while(!userInput){                //negation donc true, on rentre
+    userInput = parseInt(prompt('entrez un nombre'))
+ }
+
+    return userInput;
+ }
+ console.log(forceUser());
+
+
+ *********************
+ la fonction peut s'appeler elle mm : la recursivité ?
+
+ function factorielle(){
+    const f = forceUser();
+    let n;
+
+    if (f ===0 || f ===1){
+    return 1;
+ }
+    return factorielle (n) + factorielle (n + 1);
+ }
+ */

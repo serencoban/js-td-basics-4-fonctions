@@ -24,7 +24,10 @@
 // le nombre dont on veut calculer le double.
 */
 
-
+function double3(){
+    console.log(`le double de 3 est ${3*2}`);
+}
+double3();
 // 2°) Une fonction avec paramètre à la place de toutes celles-là :
 
 /* EXERCICE 2 : Une seule fonction avec paramètre
@@ -36,3 +39,11 @@
                      - le double de 24 ;
                      - le double de 128.
 */
+
+function double(nombre){
+    console.log(`le double de ${nombre} est ${nombre * 2}`)
+}
+double(3);
+double(10);
+double(24);
+double(128);
